@@ -1,12 +1,16 @@
 version: 1
 frontend:
-    phases:
-        build:
-            commands:
-                - 'npm run build'
-    artifacts:
-        baseDirectory:
-        files:
-            - '**/*'
-    cache:
-        paths: []
+  phases:
+    preBuild:
+      commands:
+        - echo "No preBuild step needed."
+    build:
+      commands:
+        - echo "No build step needed."
+  artifacts:
+    baseDirectory: .
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - '**/*'
